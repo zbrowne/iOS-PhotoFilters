@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0Vm-7V-2Z6">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Bike Filter-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhotoFilters" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,60 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0039.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="SMU-Qf-p8g">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SMU-Qf-p8g" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="213-xz-dJA"/>
+                            <constraint firstItem="SMU-Qf-p8g" firstAttribute="leading" secondItem="wfy-db-euE" secondAttribute="leading" id="FnN-FE-Gee"/>
+                            <constraint firstAttribute="bottom" secondItem="SMU-Qf-p8g" secondAttribute="bottom" id="ZnY-ko-ATf"/>
+                            <constraint firstItem="SMU-Qf-p8g" firstAttribute="trailing" secondItem="wfy-db-euE" secondAttribute="trailing" id="aG7-4s-526"/>
+                        </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="7rb-bm-VA4"/>
+                        <barButtonItem title="Apply Filter" id="KBU-zm-0Dc">
+                            <connections>
+                                <action selector="ApplyFilter:" destination="BYZ-38-t0r" id="KcY-w2-yBd"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="J3q-cs-PzZ"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Bike Filter" id="x5F-Cg-1d4"/>
+                    <connections>
+                        <outlet property="PhotoImageView" destination="SMU-Qf-p8g" id="iAb-Yk-i4A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="951" y="136"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JFk-bf-xts">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="0Vm-7V-2Z6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mB3-vQ-D27">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="vFu-rd-zCD">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6X9-sg-wZA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPM-oA-J8z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128" y="-557"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IMG_0039.JPG" width="3264" height="2448"/>
+    </resources>
 </document>

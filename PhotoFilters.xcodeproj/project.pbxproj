@@ -13,6 +13,7 @@
 		00CA019F1A299A1600670536 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CA019E1A299A1600670536 /* Images.xcassets */; };
 		00CA01A21A299A1600670536 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00CA01A01A299A1600670536 /* LaunchScreen.xib */; };
 		00CA01AE1A299A1600670536 /* PhotoFiltersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CA01AD1A299A1600670536 /* PhotoFiltersTests.swift */; };
+		00CA01B81A299B1000670536 /* IMG_0039.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 00CA01B71A299B1000670536 /* IMG_0039.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		00CA01A71A299A1600670536 /* PhotoFiltersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoFiltersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CA01AC1A299A1600670536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00CA01AD1A299A1600670536 /* PhotoFiltersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFiltersTests.swift; sourceTree = "<group>"; };
+		00CA01B71A299B1000670536 /* IMG_0039.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0039.JPG; path = ../../IMG_0039.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		00CA01941A299A1600670536 /* PhotoFilters */ = {
 			isa = PBXGroup;
 			children = (
+				00CA01B71A299B1000670536 /* IMG_0039.JPG */,
 				00CA01971A299A1600670536 /* AppDelegate.swift */,
 				00CA01991A299A1600670536 /* ViewController.swift */,
 				00CA019B1A299A1600670536 /* Main.storyboard */,
@@ -195,6 +198,7 @@
 				00CA019D1A299A1600670536 /* Main.storyboard in Resources */,
 				00CA01A21A299A1600670536 /* LaunchScreen.xib in Resources */,
 				00CA019F1A299A1600670536 /* Images.xcassets in Resources */,
+				00CA01B81A299B1000670536 /* IMG_0039.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
